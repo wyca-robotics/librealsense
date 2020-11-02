@@ -120,7 +120,7 @@ diff --git a/drivers/media/v4l2-core/v4l2-ioctl.c b/drivers/media/v4l2-core/v4l2
 index 58868d7129eb..c29033b8439c 100644
 --- a/drivers/media/v4l2-core/v4l2-ioctl.c
 +++ b/drivers/media/v4l2-core/v4l2-ioctl.c
-@@ -1330,6 +1330,14 @@ static void v4l_fill_fmtdesc(struct v4l2_fmtdesc *fmt)
+@@ -1401,6 +1401,14 @@ static void v4l_fill_fmtdesc(struct v4l2_fmtdesc *fmt)
  	case V4L2_META_FMT_VSP1_HGT:	descr = "R-Car VSP1 2-D Histogram"; break;
  	case V4L2_META_FMT_UVC:		descr = "UVC Payload Header Metadata"; break;
  	case V4L2_META_FMT_D4XX:	descr = "Intel D4xx UVC Metadata"; break;
@@ -132,6 +132,7 @@ index 58868d7129eb..c29033b8439c 100644
 +	case V4L2_PIX_FMT_INZC:		descr = "Planar Depth/Confidence (INZC)"; break;
 +	case V4L2_PIX_FMT_PAIR:		descr = "Relative IR (PAIR)"; break;
 +	case V4L2_PIX_FMT_Z16H:		descr = "Z16 Huffman Compression"; break;
+	case V4L2_META_FMT_VIVID:       descr = "Vivid Metadata"; break;
  
  	default:
  		/* Compressed formats */
